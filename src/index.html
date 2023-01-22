@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Title</title>
+  </head>
+  <body>
+    <div class="popup" id="popup"></div>
+    <!-- <include src="/src/html-files/header.html"></include> -->
+    <header class="header">
+      <div class="header__left-side">
+        <div class="header__logo">
+          <a class="header__logo-link" href="index.html">
+            <img
+              class="header__logo-img"
+              src="/src/images/logo.svg"
+              alt="logo"
+              id="logo"
+            />
+          </a>
+        </div>
+        <nav class="header__nav">
+          <div class="hamb">
+            <div class="hamb__field" id="hamb">
+              <span class="bar"></span> <span class="bar"></span>
+              <span class="bar"></span>
+            </div>
+          </div>
+          <ul class="header__menu" id="menu">
+            <li class="header__item nav-item nav-item-dropdown">
+              <a class="dropdown-trigger" href="#">Рестораны</a>
+              <ul class="dropdown-menu">
+                <li class="dropdown-menu-item">
+                  <span>Barbaresko</span>
+                </li>
+                <li class="dropdown-menu-item">
+                  <span>Sans</span>
+                </li>
+                <li class="dropdown-menu-item">
+                  <span>Lorem</span>
+                </li>
+                <li class="dropdown-menu-item">
+                  <span>United rest</span>
+                </li>
+              </ul>
+            </li>
+            <li class="header__item"><a href="#">События</a></li>
+            <li class="header__item"><a href="#">Контакты</a></li>
+            <li class="header__item"><a href="#">Перезвоните мне</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="header__right-side">
+        <ul class="header__icons" id="icons">
+          <li class="header__icon">
+            <a href="#" class="icon__link"
+              ><img
+                class="icon__image"
+                src="/src/images/icons/cart-icon.svg"
+                alt="icon-cart"
+            /></a>
+          </li>
+          <li class="header__icon">
+            <a href="#" class="icon__link"
+              ><img
+                class="icon__image"
+                src="/src/images/icons/Profile.svg"
+                alt="icon-profile"
+            /></a>
+          </li>
+          <li class="header__icon">
+            <a href="#" class="icon__link"
+              ><img
+                class="icon__image"
+                src="/src/images/icons/Search.svg"
+                alt="icon-search"
+            /></a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main class="main">
+      <div>
+        <img class="main__image" src="/src/images/banner.png" alt="banner" />
+      </div>
+      <div class="main__grid-block">
+        <div class="main__grid">
+          <div class="main__grid-1" id="grid1"></div>
+          <div class="main__grid-1" id="grid2"></div>
+          <div class="main__grid-1" id="grid3"></div>
+        </div>
+        <div class="main__recommended-block">
+          <h2 class="main__title">Рекомендуем попробовать</h2>
+          <div class="main__icons">
+            <div class="main__icon-block">
+              <img
+                class="main__icon"
+                src="/src/images/icons/Profile.svg"
+                alt="icon"
+              />
+            </div>
+            <div class="main__icon-block">
+              <img
+                class="main__icon"
+                src="/src/images/icons/Search.svg"
+                alt="icon"
+              />
+            </div>
+            <div class="main__icon-block">
+              <img
+                class="main__icon"
+                src="/src/images/icons/cart-icon.svg"
+                alt="icon"
+              />
+            </div>
+            <div class="main__icon-block">
+              <img
+                class="main__icon"
+                src="/src/images/icons/Chevron-down.svg"
+                alt="icon"
+              />
+            </div>
+            <div class="main__icon-block">
+              <img
+                class="main__icon"
+                src="/src/images/icons/Arrow-right.svg"
+                alt="icon"
+              />
+            </div>
+          </div>
+          <form class="main__form" action="">
+            <label class="main__label" for="name">
+              <span id="input-name" class="main__input-title">Ваше имя*</span>
+              <input
+                id="name"
+                type="text"
+                class="main__input"
+                placeholder="Ваше имя *"
+              />
+            </label>
+            <label class="main__label" for="number">
+              <span id="input-number" class="main__input-title"
+                >Номер телефона*</span
+              >
+              <input
+                id="number"
+                type="text"
+                class="main__input"
+                placeholder="Номер телефона *"
+              />
+            </label>
+            <label class="main__label" for="comment">
+              <span id="input-comment" class="main__input-title"
+                >Комментарий</span
+              >
+              <input
+                id="comment"
+                type="text"
+                class="main__input"
+                placeholder="Комментарий"
+              />
+            </label>
+            <button
+              class="main__form-button"
+              text="Отправить"
+              hover-text="Перезвоните мне"
+            ></button>
+          </form>
+        </div>
+      </div>
+    </main>
+  </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+  <script src="/src/app.js"></script>
+</html>
